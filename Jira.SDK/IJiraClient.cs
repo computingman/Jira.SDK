@@ -45,5 +45,7 @@ namespace Jira.SDK
 		List<Issue> GetIssuesWithEpicLink(String epicLink);
 
         List<IssueFilter> GetFavoriteFilters();
+
+        IssueChangeLogResult GetChangeLog(string issueKey);
 	}
 }

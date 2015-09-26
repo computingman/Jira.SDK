@@ -163,6 +163,11 @@ namespace Jira.SDK.Domain
             return _worklogs;
         }
 
+        public ChangeLog GetChangeLog()
+        {
+            return _jira.Client.GetChangeLog(Key).ChangeLog;
+        }
+
         public List<Transition> Transitions { get; set; }
         private List<Transition> _transitions;
         public List<Transition> GetTransitions()
